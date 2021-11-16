@@ -1,0 +1,714 @@
+// 常用 class 样式表
+.flex-between {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-start {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img-span-middle {
+    img {
+        vertical-align: middle;
+    }
+
+    span {
+        vertical-align: middle;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+a {
+    color: $primary-color;
+}
+a:hover {
+    color: $primary-active-color;
+}
+// ant-design-vue 组件样式覆盖 start
+.ant-select-dropdown .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled),
+.ant-select-dropdown .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled),
+.ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected,
+.ant-tree li .ant-tree-node-content-wrapper:hover,
+.ant-select-tree-node-content-wrapper-close:hover,
+.ant-select-tree li .ant-select-tree-node-content-wrapper:hover,
+.ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected,
+.ant-calendar-range .ant-calendar-in-range-cellbefore,
+.ant-calendar-time-picker-select li:hover,
+.ant-calendar-date:hover,
+.ant-table-thead tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) td,
+.ant-table-tbody tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) td,
+.ant-table-thead tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) td,
+.ant-table-tbody tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) td,
+.ant-table-tbody tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) td,
+.ant-upload-list-item-info:hover,
+.ant-calendar-range .ant-calendar-in-range-cell::before,
+.ant-cascader-menu-item:hover,
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-item-selected > a,
+.ant-dropdown-menu-item-selected,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ant-dropdown-menu-submenu-title:hover {
+    background-color: $primary-hover-color !important;
+}
+.ant-dropdown-menu-item > a:hover,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    color: $primary-color !important;
+}
+.ant-input:hover,
+.ant-select-selection:hover,
+.ant-pagination-options-quick-jumper input:hover {
+    border-color: $border-color-hover !important;
+}
+.ant-btn-primary:not([disabled]) {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+}
+.ant-btn-primary:not([disabled]):hover,
+.ant-btn-primary:not([disabled]):focus,
+.ant-btn-primary:not([disabled]):active {
+    background-color: $primary-active-color !important;
+}
+.ant-btn:not([disabled]):not(.ant-btn-primary):hover,
+.ant-btn:not([disabled]):not(.ant-btn-primary):focus {
+    color: $primary-color !important;
+    border-color: $primary-color !important;
+}
+// .ant-pagination-item-active:hover a,
+// .ant-pagination-item-active a {
+//     color: #fff !important;
+// }
+// .ant-pagination-item-active,
+// .ant-radio-inner::after {
+//     background-color: $primary-color !important;
+// }
+.ant-pagination-item-active:focus a,
+.ant-pagination-item-active:hover a {
+    color: $primary-color !important;
+}
+.ant-radio-checked .ant-radio-inner,
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover {
+    border-color: $primary-color !important;
+}
+.ant-switch-checked,
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background-color: $primary-color !important;
+}
+td a,
+.ant-btn-link {
+    color: $primary-color !important;
+}
+.ant-table-tbody > tr.ant-table-row-selected td {
+    background-color: transparent !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+}
+.ant-calendar-selected-day .ant-calendar-date {
+    color: #fff !important;
+    background: $primary-active-color !important;
+}
+.ant-calendar-date:active {
+    color: #fff !important;
+    background: $primary-color !important;
+}
+.ant-badge-status-blue {
+    background: #1890ff !important;
+}
+.ant-tag-blue {
+    color: #1890ff !important;
+    background-color: #ecf4fe !important;
+    border-color: #d8e8fd !important;
+}
+.ant-select-dropdown {
+    .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+        background-color: $primary-hover-color;
+    }
+    .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+        background-color: $primary-hover-color;
+    }
+}
+//  modal table 的样式
+.contacts-company-modal {
+    table {
+        white-space: nowrap;
+    }
+}
+
+.ant-select-selection:hover,
+.ant-input:hover {
+    border-color: $primary-color !important;
+}
+
+.ant-calendar-date:hover {
+    background: $primary-hover-color !important;
+}
+.ant-calendar-selected-day .ant-calendar-date {
+    color: white !important;
+    background: $primary-color !important;
+}
+
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+    background: $primary-hover-color !important;
+}
+
+// 时间控件
+.ant-calendar-range .ant-calendar-in-range-cell::before {
+    background: $primary-hover-color !important;
+}
+.ant-calendar-time-picker-select li:hover {
+    background: $primary-hover-color !important;
+}
+// select 选择框、input 输入框
+.ant-select-selection,
+.ant-input {
+    border-radius: 2px !important;
+}
+
+.ant-btn-background-ghost,
+.ant-btn-background-ghost.ant-btn-primary:not([disabled]) {
+    color: $primary-color !important;
+    background-color: transparent !important;
+    border-color: $primary-color !important;
+    text-shadow: none;
+}
+.ant-btn-background-ghost.ant-btn-danger {
+    color: #ff4d4f !important;
+    border-color: #ff4d4f !important;
+}
+// 按钮
+.ant-btn {
+    border-radius: 2px !important;
+}
+// 文件上传
+.ant-upload-list-item-info:hover {
+    background: $primary-hover-color !important;
+}
+// ant-design-vue 组件样式覆盖 end
+
+// start 覆盖 antd 全局样式
+// //   modal table 的样式
+// .contacts-company-modal {
+//     table {
+//         white-space: nowrap;
+//     }
+// }
+
+//  .ant-form-item-control {
+//      line-height: 30px !important;
+//  }
+
+//   end 覆盖 antd 全局样式
+
+#micro-app {
+    position: absolute;
+    top: 40px;
+    height: calc(100% - 40px) !important;
+    overflow-y: auto;
+}
+
+.ant-popover {
+    z-index: 1000 !important;
+}
+.timModal.ant-modal .ant-modal-body {
+    padding: 0 !important;
+}
+.timModal.ant-modal .ant-modal-content {
+    border-top: 0px !important;
+}
+
+// 全局滚动条样式
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    // background-color: transparent;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // -webkit-box-shadow: inset 0 0 0.6 rgba(0, 0, 0, 0.3);
+    // border-radius: 10px;
+    // background-color: #f1f1f1;
+    background-color: #f1f1f1;
+    // border: 1px solid #d9d9d9;
+    // border-top: 1px solid #d9d9d9;
+    // background-color: #eee;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // background-color: #ccc;
+    background: #c3c3c3;
+}
+// ::-webkit-scrollbar-thumb:hover {
+// cursor: pointer;
+// background: rgba(0, 0, 0, 0.25);
+// }
+/*************************************************************************************************/
+// 子应用会依赖一下样式！！！
+// 按照 UI 规范进行 antd 全局样式覆盖
+// 此动作很危险，可能影响正常组件，请勿模仿，也是无奈之举
+// 有些地方会使用 important 进行强行覆盖，所有组件都会受影响，子应用如果有特殊需求也许使用 important 覆盖
+// 子应用也不要随意添加其他配置及样式，否则可能会是覆盖无效
+body {
+    min-width: 1440px;
+    #manage-system-web {
+        min-width: 1440px;
+        overflow: hidden;
+    }
+}
+// ant modal 框全局覆盖
+//*****全局强行覆盖，手动狗头*****
+.ant-modal-mask,
+.ant-modal-wrap {
+    z-index: 99 !important;
+}
+.ant-modal > .ant-modal-content {
+    background: $content-bg-color;
+    border-radius: 0;
+
+    .ant-modal-close {
+        right: 5px;
+
+        .ant-modal-close-x {
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+        }
+    }
+
+    .ant-modal-header {
+        height: 40px;
+        padding: 13px 20px;
+        background: #f5f5f5;
+        border: none;
+
+        .ant-modal-title {
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #333333;
+            line-height: 14px;
+        }
+    }
+
+    .ant-modal-body {
+        padding: 30px;
+    }
+
+    .ant-modal-footer {
+        margin: 0 30px;
+        padding: 16px 0;
+    }
+}
+// .ant-modal-footer .ant-btn {
+//     height: 40px !important;
+//     padding: 0 49px;
+// }
+// .ant-modal-confirm .ant-modal-body {
+//     padding: 26px 24px 24px !important;
+// }
+// .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+//     margin-left: 0 !important;
+// }
+// .ant-modal-confirm-body .ant-modal-confirm-content {
+//     margin-top: 16px !important;
+// }
+// .ant-modal-confirm .ant-modal-confirm-btns {
+//     margin-top: 70px !important;
+// }
+// .ant-modal-confirm-btns .ant-btn {
+//     padding: 0 27px !important;
+// }
+// ant tabs 框全局覆盖
+//*****全局强行覆盖，手动狗头*****
+.ant-tabs {
+    .ant-tabs-top-bar {
+        .ant-tabs-nav-scroll {
+            .ant-tabs-nav {
+                .ant-tabs-tab {
+                    padding: 0;
+                    margin: 0 20px;
+                    line-height: 45px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #1d1d1d;
+                }
+
+                .ant-tabs-tab-active {
+                    color: $primary-color;
+                }
+
+                .ant-tabs-tab:first-child {
+                    margin-left: 32px;
+                }
+            }
+
+            .ant-tabs-ink-bar {
+                background: $primary-color;
+            }
+        }
+    }
+}
+// ant tooltip 框全局覆盖
+//*****全局强行覆盖，手动狗头*****
+.ant-tooltip.ant-tooltip-placement-top {
+    .ant-tooltip-content {
+        .ant-tooltip-inner {
+            padding: 8px 12px;
+            background: rgba(0, 0, 0, 0.75);
+            box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                0 9px 28px 8px rgba(0, 0, 0, 0.05);
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 18px;
+            border-radius: 2px;
+        }
+    }
+}
+// ant popover 框全局覆盖
+//*****全局强行覆盖，手动狗头*****
+.ant-popover.ant-popover-placement-bottomRight {
+    border-radius: 2px;
+
+    .ant-popover-content {
+        border-radius: 2px;
+
+        .ant-popover-inner {
+            border-radius: 2px;
+        }
+    }
+}
+// ant popover 框全局覆盖
+//*****全局强行覆盖，手动狗头*****
+.ant-cascader-menus.ant-cascader-menus-placement-bottomLeft {
+    border-radius: 2px;
+}
+
+// ant form 表单样式自定义
+//*****水平布局*****
+.ant-form.cover-ant-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .ant-form-item.cover-form-item {
+        flex: none;
+        width: 25%;
+        // height: 40px;
+        margin-bottom: 24px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .ant-form-item-label {
+            position: relative;
+            flex: none;
+            height: 32px;
+            width: 68px;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            overflow: visible;
+            white-space: pre-line !important;
+            line-height: 18px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
+
+            .ant-form-item-required::before {
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                transform: translateY(-55%);
+            }
+            .ant-form-item-no-colon {
+                width: 68px;
+                padding-right: 12px;
+            }
+            .ant-form-item-no-colon::after {
+                display: none;
+            }
+        }
+
+        .ant-form-item-control-wrapper {
+            flex: none;
+            width: 200px;
+            max-width: 280px;
+            min-width: 200px;
+
+            .ant-form-item-control {
+                line-height: 32px;
+
+                .ant-form-explain {
+                    position: absolute;
+                    bottom: -20px;
+                    left: auto;
+                }
+            }
+        }
+        @media screen and(min-width:1920px) {
+            .ant-form-item-control-wrapper {
+                width: 280px;
+            }
+        }
+    }
+    .ant-form-item.cover-form-item:nth-child(4n-2) {
+        padding-left: calc((25% - 268px) / 3);
+        // justify-content: center;
+    }
+    .ant-form-item.cover-form-item:nth-child(4n-1) {
+        justify-content: flex-end;
+        padding-right: calc((25% - 268px) / 3);
+    }
+    .ant-form-item.cover-form-item:nth-child(4n) {
+        justify-content: flex-end;
+    }
+
+    .ant-form-item.item-title {
+        width: 100%;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .ant-form-item.item-1:nth-child(n) {
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    .ant-form-item.item-2:nth-child(n) {
+        justify-content: flex-start;
+        padding-left: calc((25% - 268px) / 3);
+    }
+    .ant-form-item.item-3:nth-child(n) {
+        justify-content: flex-start;
+        padding-right: calc((25% - 268px) / 3);
+    }
+    .ant-form-item.item-4:nth-child(n) {
+        justify-content: flex-end;
+        padding-right: 0;
+    }
+
+    @media screen and(min-width:1920px) {
+        .ant-form-item.cover-form-item:nth-child(4n-2) {
+            padding-left: calc((25% - 348px) / 3);
+            // justify-content: center;
+        }
+        .ant-form-item.cover-form-item:nth-child(4n-1) {
+            justify-content: flex-end;
+            padding-right: calc((25% - 348px) / 3);
+        }
+
+        .ant-form-item.item-1:nth-child(n) {
+            justify-content: flex-start;
+            padding: 0;
+            padding-left: 0;
+        }
+        .ant-form-item.item-2:nth-child(n) {
+            justify-content: flex-start;
+            padding: 0;
+            padding-left: calc((25% - 348px) / 3);
+        }
+        .ant-form-item.item-3:nth-child(n) {
+            justify-content: flex-end;
+            padding: 0;
+            padding-right: calc((25% - 348px) / 3);
+        }
+        .ant-form-item.item-4:nth-child(n) {
+            justify-content: flex-end;
+            padding: 0;
+        }
+    }
+    // 占两格
+    .ant-form-item.cover-form-item.cover-form-item-double {
+        width: 50%;
+        padding: 0;
+        padding-right: 0;
+        justify-content: flex-start;
+
+        .ant-form-item-control-wrapper {
+            flex: auto;
+            min-width: calc(100% - 68px - (50% - 268px) / 3 * 2);
+            width: calc(100% - 68px - (50% - 268px) / 3 * 2);
+            max-width: calc(100% - 68px - (50% - 268px) / 3 * 2);
+        }
+        @media screen and(min-width:1920px) {
+            .ant-form-item-control-wrapper {
+                min-width: calc(100% - 68px - (50% - 348px) / 3 * 2);
+                width: calc(100% - 68px - (50% - 348px) / 3 * 2);
+                max-width: calc(100% - 68px - (50% - 348px) / 3 * 2);
+            }
+        }
+    }
+    // 占三格空间
+    .ant-form-item.cover-form-item.cover-form-item-triple {
+        width: 75%;
+        padding: 0;
+        justify-content: flex-start;
+
+        .ant-form-item-control-wrapper {
+            flex: auto;
+            min-width: calc(100% - 68px - ((100% / 3) - 268px) / 3);
+            width: calc(100% - 68px - ((100% / 3) - 268px) / 3);
+            max-width: calc(100% - 68px - ((100% / 3) - 268px) / 3);
+        }
+        @media screen and(min-width:1920px) {
+            .ant-form-item-control-wrapper {
+                min-width: calc(100% - 68px - ((100% / 3) - 348px) / 3);
+                width: calc(100% - 68px - ((100% / 3) - 348px) / 3);
+                max-width: calc(100% - 68px - ((100% / 3) - 348px) / 3);
+            }
+        }
+    }
+    // 占一整行，不带 label
+    .ant-form-item.cover-form-item.cover-form-item-alone {
+        width: 100%;
+        padding: 0;
+        justify-content: flex-start;
+
+        .ant-form-item-control-wrapper {
+            flex: auto;
+            max-width: 100%;
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+    // 占一整行，带 label
+    .ant-form-item.cover-form-item.cover-form-item-alone-label {
+        width: 100%;
+        padding: 0;
+        justify-content: flex-start;
+
+        .ant-form-item-control-wrapper {
+            flex: auto;
+            width: calc(100% - 68px);
+            max-width: calc(100% - 68px);
+            min-width: calc(100% - 68px);
+        }
+        @media screen and(min-width:1920px) {
+            .ant-form-item-control-wrapper {
+                width: calc(100% - 68px);
+            }
+        }
+    }
+    // 包含按钮的
+    .ant-form-item.cover-form-item.cover-form-item-buttons {
+        padding: 0;
+        flex: auto;
+        margin-bottom: 24px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        .ant-form-item-control-wrapper {
+            flex: auto;
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+
+            .ant-form-item-control {
+                line-height: 32px;
+                text-align: right;
+
+                .button + .button {
+                    margin-left: 8px;
+                }
+            }
+        }
+        @media screen and(min-width:1920px) {
+            .ant-form-item-control-wrapper {
+                width: 100%;
+            }
+        }
+    }
+}
+/*************************************************************************************************/
+// 支持 table 列可调节
+.resize-table-th {
+    position: relative;
+
+    .table-draggable-handle {
+        z-index: 1 !important;
+        width: 10px !important;
+        height: 100% !important;
+        position: absolute;
+        bottom: 0;
+        left: -5px !important;
+        right: 0;
+        cursor: col-resize;
+        touch-action: none;
+    }
+}
+// .resize-table-th:hover {
+//     border-right: solid 1px #e9e9e9;
+// }
+// table form 必填项 * 标识
+.table-form-label-required {
+    position: relative;
+}
+
+.table-form-label-required::before {
+    // display: inline-block;
+    // margin-right: 4px;
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    display: block;
+    transform: scale(0.8);
+    color: #f5222d;
+    font-size: 12px;
+    line-height: 1;
+    content: '\e02d';
+    // content: '';
+    font-family: 'iconfont' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*************************************************************************************************/
+/* 引入字体图标 start  */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../assets/fontIcon/iconfont.eot');
+    src: url('../assets/fontIcon/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fontIcon/iconfont.woff2') format('woff2'), url('../assets/fontIcon/iconfont.woff') format('woff'),
+        url('../assets/fontIcon/iconfont.ttf') format('truetype'),
+        url('../assets/fontIcon/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family: 'iconfont' !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont-button-icon {
+    margin-right: 3px;
+}
+.iconfont-button-icon + span {
+    letter-spacing: 3px;
+}
+/* 引入字体图标 end  */

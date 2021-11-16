@@ -1,0 +1,22 @@
+.fixed-footer {
+    z-index: 98;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // min-width: 1440px;
+    // width: calc(100% - 208px);
+    height: 56px;
+    background: #ffffff;
+    box-shadow: 2px -1px 2px 1px rgba(0, 0, 0, 0.03);
+    filter: blur(0);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 32px;
+
+    & > * + * {
+        margin-left: 12px;
+    }
+}
